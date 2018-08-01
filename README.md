@@ -12,7 +12,26 @@ package to replace the hopelessly out of date version.
 		or
 		MOD_WSGI_VERSION=X.X.X make build
 
-3) Inspect the files:
+3) Verify the files are correct in the `debian` subfolder.
 
-		make dev
-        dpkg --info libapache2-mod-wsgi*
+## Debugging the container
+
+You can run the docker container like:
+
+	make dev
+    dpkg --info libapache2-mod-wsgi*
+
+## Using the package repo
+
+You need to add the repo key:
+
+	$ wget -qO - https://rmyers.github.io/libapache2-mod-wsgi/debian/PUBLIC.KEY | sudo apt-key add -
+
+Next add a `mod_wsgi.list` file in `/etc/apt/sources.list.d/`:
+
+	$ sudo echo "deb https://rmyers.github.io/libapache2-mod-wsgi/debian trusty main" > /etc/apt/sources.list.d/mod_wsgi.list
+
+Then run `apt-get update` and install:
+
+	$ sudo apt-get update
+	$ sudo apt-get install libapache2-mod-wsgi

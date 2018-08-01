@@ -1,0 +1,7 @@
+Origin: rmyers.github.io/libapach2-mod-wsgi/debian
+Label: rmyers.github.io/libapach2-mod-wsgi/debian
+Codename: trusty
+Architectures: amd64
+Components: main
+Description: Personal repository
+SignWith: 81D2AD20

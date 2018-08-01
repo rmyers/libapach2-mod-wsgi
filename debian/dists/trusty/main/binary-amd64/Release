@@ -1,0 +1,5 @@
+Component: main
+Origin: rmyers.github.io/libapach2-mod-wsgi/debian
+Label: rmyers.github.io/libapach2-mod-wsgi/debian
+Architecture: amd64
+Description: Personal repository

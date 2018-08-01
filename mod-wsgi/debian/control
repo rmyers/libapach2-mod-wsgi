@@ -1,0 +1,11 @@
+Source: mod-wsgi
+Section: web
+Priority: optional
+Maintainer: Robert Myers <myer0052@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libapache2-mod-wsgi
+Architecture: any
+Depends: libc6 (>= 2.14), libpython2.7 (>= 2.7), apache2 (>= 2.4)
+Description: Apache2 module for mod_wsgi

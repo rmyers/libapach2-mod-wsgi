@@ -1,0 +1,5 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mod_wsgi
+Upstream-Contact: Graham Dumpleton
+Source: https://github.com/GrahamDumpleton/mod_wsgi
+Files: *
