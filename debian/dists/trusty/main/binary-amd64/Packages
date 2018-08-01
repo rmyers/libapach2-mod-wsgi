@@ -8,9 +8,9 @@ Depends: libc6 (>= 2.14), libpython2.7 (>= 2.7), apache2 (>= 2.4)
 Priority: optional
 Section: web
 Filename: pool/main/m/mod-wsgi/libapache2-mod-wsgi_4.6.4_amd64.deb
-Size: 86134
-SHA256: dafa752efb9e98617b26b3a82c4eda41f886da3e00bd77db5506a86025147c98
-SHA1: 47e3f2bf8eeaa5b6d46712170feebbeb60f7e5d7
-MD5sum: f8d65ed7a0ecb5fc0dd01e661aad2ed9
+Size: 86280
+SHA256: 54f072d9e729483e8b4b71c8c03ec001634dbb7bc98fc7927b9265defe34b0a6
+SHA1: 34adf94ee42a79fc2481d2f503d3123a70257870
+MD5sum: b3624fffbf2a346ef578794da878dfcd
 Description: Apache2 module for mod_wsgi
 
