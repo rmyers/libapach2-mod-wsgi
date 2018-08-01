@@ -8,11 +8,11 @@ package to replace the hopelessly out of date version.
 1) Install docker and docker-compose on your local machine.
 2) Run the build:
 
-	make build
-	or
-	MOD_WSGI_VERSION=X.X.X make build
+		make build
+		or
+		MOD_WSGI_VERSION=X.X.X make build
 
 3) Inspect the files:
 
-	make dev
+		make dev
         dpkg --info libapache2-mod-wsgi*
