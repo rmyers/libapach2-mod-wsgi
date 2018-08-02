@@ -35,3 +35,9 @@ Then run `apt-get update` and install:
 
 	$ sudo apt-get update
 	$ sudo apt-get install libapache2-mod-wsgi
+
+## How does this work?
+
+I based this repo off of the work done by Matt Polnik. You can see his
+[blog post](https://pmateusz.github.io/linux/2017/06/30/linux-secure-apt-repository.html)
+for more details.
