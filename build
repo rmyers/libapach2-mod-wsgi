@@ -5,7 +5,9 @@
 # Run this script from the grandparent directory like:
 #   cd .. && ./mod-wsgi/build
 
-MOD_WSGI_VERSION=${MOD_WSGI_VERSION:-4.6.4}
+MOD_WSGI_VERSION=4.6.4
+RELEASE_VERSION=1
+MOD_WSGI_RELEASE_VERSION=$MOD_WSGI_VERSION-$RELEASE_VERSION
 
 function import_keys() {
     if [ ! -e mod-wsgi/private.key ]; then
@@ -19,24 +21,24 @@ function import_keys() {
 function download() {
     curl -L https://github.com/GrahamDumpleton/mod_wsgi/archive/${MOD_WSGI_VERSION}.tar.gz -o mod-wsgi_${MOD_WSGI_VERSION}.orig.tar.gz
     tar -xzf mod-wsgi_${MOD_WSGI_VERSION}.orig.tar.gz
-    mv mod_wsgi-${MOD_WSGI_VERSION} mod-wsgi-${MOD_WSGI_VERSION}
+    mv mod_wsgi-${MOD_WSGI_VERSION} mod-wsgi-${MOD_WSGI_RELEASE_VERSION}
 }
 
 
 function build() {
-    pushd mod-wsgi-${MOD_WSGI_VERSION}
+    pushd mod-wsgi-${MOD_WSGI_RELEASE_VERSION}
     mkdir debian
     cp -r ../mod-wsgi/debian/* debian/
 
     # Create changelog entry for this version
-    dch --create -M --package mod-wsgi -v ${MOD_WSGI_VERSION} -D trusty -u low "Automated Build"
+    dch --create -M --package mod-wsgi -v ${MOD_WSGI_RELEASE_VERSION} -D trusty -u low "Automated Build"
 
     dpkg-buildpackage -us -uc
     popd
 }
 
 function create_repo() {
-    reprepro --basedir debian includedeb trusty libapache2-mod-wsgi_${MOD_WSGI_VERSION}_amd64.deb
+    reprepro --basedir debian includedeb trusty libapache2-mod-wsgi_${MOD_WSGI_RELEASE_VERSION}_amd64.deb
 }
 
 # Main

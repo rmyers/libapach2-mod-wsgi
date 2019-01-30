@@ -1,16 +1,16 @@
 Package: libapache2-mod-wsgi
 Source: mod-wsgi
-Version: 4.6.4
+Version: 4.6.4-1
 Architecture: amd64
 Maintainer: Robert Myers <myer0052@gmail.com>
 Installed-Size: 291
 Depends: libc6 (>= 2.14), libpython2.7 (>= 2.7), apache2 (>= 2.4)
 Priority: optional
 Section: web
-Filename: pool/main/m/mod-wsgi/libapache2-mod-wsgi_4.6.4_amd64.deb
-Size: 86350
-SHA256: 5c70da542f07229f9e5f8ce8629388b7378ac99041da4d407ff61912abf2d101
-SHA1: d3185a30726d58a9361c612729e1db7c21fc2f05
-MD5sum: 08dc5861bf46c0d98bcdea9c02992730
+Filename: pool/main/m/mod-wsgi/libapache2-mod-wsgi_4.6.4-1_amd64.deb
+Size: 86732
+SHA256: 1278e20820395108037ec3a46989cef96dc10b4ed4a01ba47984d7fd3cd9974c
+SHA1: 3f66d0fd094cbfc569907ac2c4ab9a41f9475edf
+MD5sum: 0283f2315696b8cf3b7a03cd8618e2b1
 Description: Apache2 module for mod_wsgi
 
